@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Bebas";
+  src:
+    url("./assets/fonts/bebasneueregular.woff") format("woff"),
+    url("./assets/fonts/bebasneueregular.woff2") format("woff2"),
+    url("./assets/fonts/bebasneueregular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montesserat";
+  src: url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: "Bebas", sans-serif;
+  font-weight: 400;
+}
+
+h3,
+h4,
+h5,
+p {
+  font-family: "Montesserat", sans-serif;
+}
+
+:root {
+  --blue: rgba(142, 179, 235, 1);
+  --green: rgba(11, 210, 138, 1);
+  --red: rgba(202, 14, 14, 1);
+  --gray: rgba(164, 169, 173, 1);
+  --header-bg: rgba(38, 39, 64, 1);
+}
+
+body {
+  max-width: 1920px;
+  min-width: 320px;
+  background: rgb(37, 42, 72);
+  background: linear-gradient(90deg, rgba(37, 42, 72, 1) 0%, rgba(28, 84, 186, 1) 100%);
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./assets/images/bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/* .main__info {
+  display: grid;
+  grid-template-columns: 930px 353px;
+  justify-content: center;
+  gap: 2em;
+  margin: 100px 310px 0 310px;
+} */
+
+.main__info {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  justify-content: center;
+  gap: 2em;
+  margin: 70px auto;
+  max-width: 1200px;
+}
+
+@media (max-width: 1180px) {
+  .main__info {
+    grid-template-columns: 40% 60%;
+    gap: 2em;
+    margin: 50px 20px;
+  }
+}
+
+@media (max-width: 765px) {
+  .main__info {
+    grid-template-columns: 1fr;
+    margin: 50px;
+  }
+}

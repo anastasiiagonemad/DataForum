@@ -1,0 +1,120 @@
+.active {
+    color: var(--green);
+}
+
+.nonactive {
+    color: var(--red);
+}
+
+.activeTime {
+    background-color: var(--green);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nonActiveTime {
+    background-color: #3ea3f5;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.activeTitle {
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.activeTitle h2 {
+    color: var(--green);
+    font-size: 2em;
+    text-align: center;
+}
+
+.activeTitle span {
+    margin-top: -2px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50px;
+    background-color: var(--green);
+}
+
+.dataList {
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dataListItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 0px 0;
+    gap: 30px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.dataListImage {
+    width: 120px;
+    height: 120px;
+    place-self: center;
+}
+
+.dataListTitle {
+    display: flex;
+    align-self: center;
+    gap: 24px;
+}
+.dataListText {
+    flex-grow: 1;
+}
+
+.dataListText h3,
+.dataListText p {
+    font-size: 1em;
+}
+
+.sliderElement {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8em 0 8em;
+    margin-top: -30px;
+}
+
+.sliderElement button {
+    background-color: var(--header-bg);
+    border: none;
+    border-radius: 50px;
+}
+
+.prevSlide {
+    padding: 8px 7px 5px 11px;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.nextSlide {
+    padding: 6px 7px 5px 11px;
+    cursor: pointer;
+}
+
+.nextSlide img,
+.prevSlide img {
+    width: 20px;
+}
+
+.textColorWhite {
+    color: white;
+}
+
+.dataListTimerange {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 1em;
+}
